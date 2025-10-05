@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react'
 import { useGSAP } from '@gsap/react'
 import { gsap, ScrollTrigger } from '../../lib/gsap-config'
-import { Shield } from 'lucide-react'
+import { AlertCircle, Info, AlertTriangle, Shield } from 'lucide-react'
 import siteConfig from '../../config/site.config.json'
 import { type Rule } from '../../types/config'
 
