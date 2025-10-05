@@ -77,7 +77,7 @@ Built with modern tools and best practices:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/swisser-web-04.git
+git clone https://github.com/SwisserDev/swisser-web-04.git
 
 # Navigate to the project
 cd swisser-web-04
@@ -103,7 +103,7 @@ git commit -m "Initial deployment"
 git push origin main
 ```
 
-Your site goes live automatically at `https://[username].github.io/swisser-web-04/`
+Your site goes live automatically at `https://SwisserDev.github.io/swisser-web-04/`
 
 ---
 
@@ -289,7 +289,7 @@ npm run deploy       # Build and deploy to GitHub Pages
 ### Need Help?
 
 - 📖 **Documentation** - All configuration options are commented in `site.config.json`
-- 💬 **Issues** - Found a bug? [Open an issue](https://github.com/yourusername/swisser-web-04/issues)
+- 💬 **Issues** - Found a bug? [Open an issue](https://github.com/SwisserDev/swisser-web-04/issues)
 - 🔧 **Customization** - The code is clean and well-commented for easy modification
 
 ### Show Your Support
