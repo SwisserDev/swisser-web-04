@@ -10,7 +10,6 @@ export const Hero = () => {
   const heroRef = useRef<HTMLDivElement>(null)
   const contentRef = useRef<HTMLDivElement>(null)
   const imageRef = useRef<HTMLDivElement>(null)
-  const statsRef = useRef<HTMLDivElement>(null)
   const [isLoading, setIsLoading] = useState(true)
   const [loadingProgress, setLoadingProgress] = useState(0)
   const [playerCount, setPlayerCount] = useState(0)

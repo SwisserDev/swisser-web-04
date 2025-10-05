@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react'
 import { useGSAP } from '@gsap/react'
 import { gsap, ScrollTrigger } from '../../lib/gsap-config'
-import { AlertCircle, Info, AlertTriangle, Shield } from 'lucide-react'
+import { Shield } from 'lucide-react'
 import siteConfig from '../../config/site.config.json'
 import { type Rule } from '../../types/config'
 
@@ -20,17 +20,6 @@ export const Rules = () => {
   const filteredRules = selectedCategory === 'all'
     ? rules
     : rules.filter((rule) => rule.category === selectedCategory)
-
-  const getSeverityIcon = (severity: string) => {
-    switch (severity) {
-      case 'high':
-        return <AlertCircle className="w-5 h-5" />
-      case 'medium':
-        return <AlertTriangle className="w-5 h-5" />
-      default:
-        return <Info className="w-5 h-5" />
-    }
-  }
 
   const getSeverityColor = (severity: string) => {
     switch (severity) {
