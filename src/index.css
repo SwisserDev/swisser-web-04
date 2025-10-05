@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@300;400;500;600;700&family=Quantico:wght@400;700&family=Roboto+Condensed:wght@300;400;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* GTA V Los Santos Color System */
+    --gta-black: #0D0D0D;
+    --gta-panel: #1A1A1A;
+    --gta-panel-light: #252525;
+    --gta-white: #FFFFFF;
+    --accent-blue: #5E9CD3;
+    --accent-yellow: #F7B731;
+    --accent-green: #2ECC40;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-gta-black text-gta-white font-body;
+    overflow-x: hidden;
+    position: relative;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+  }
+
+  /* Subtle grid overlay - GTA V HUD style */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(rgba(94, 156, 211, 0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(94, 156, 211, 0.02) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.3;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display uppercase tracking-wider;
+    line-height: 1;
+    letter-spacing: 0.05em;
+  }
+
+  /* Custom scrollbar - GTA V style */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-gta-panel;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-accent-blue;
+    border-radius: 0;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-accent-blue-light;
+  }
+
+  /* Selection color - GTA V Blue */
+  ::selection {
+    @apply bg-accent-blue text-gta-black;
+  }
+
+  ::-moz-selection {
+    @apply bg-accent-blue text-gta-black;
+  }
+}
+
+@layer components {
+  /* Container - GTA V style */
+  .container-gta {
+    @apply max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* Keep old classes for compatibility */
+  .container-editorial {
+    @apply container-gta;
+  }
+
+  .container-cinema {
+    @apply container-gta;
+  }
+
+  /* GTA V Buttons */
+  .btn-gta {
+    @apply relative px-8 py-3 font-heading font-bold uppercase tracking-wider;
+    @apply bg-accent-blue text-gta-black;
+    @apply transition-all duration-200 ease-out;
+    @apply hover:bg-accent-blue-light hover:shadow-blue-glow;
+    clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px));
+  }
+
+  .btn-gta-yellow {
+    @apply relative px-8 py-3 font-heading font-bold uppercase tracking-wider;
+    @apply bg-accent-yellow text-gta-black;
+    @apply transition-all duration-200 ease-out;
+    @apply hover:bg-accent-yellow-light hover:shadow-yellow-glow;
+    clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px));
+  }
+
+  .btn-gta-outline {
+    @apply px-8 py-3 font-heading font-bold uppercase tracking-wider;
+    @apply border-2 border-accent-blue text-accent-blue;
+    @apply transition-all duration-200 ease-out;
+    @apply hover:bg-accent-blue hover:text-gta-black;
+    clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px));
+  }
+
+  /* Legacy button compatibility */
+  .btn-cinema {
+    @apply btn-gta-outline;
+  }
+
+  .btn-cinema-gold {
+    @apply btn-gta-yellow;
+  }
+
+  .btn-editorial {
+    @apply btn-gta;
+  }
+
+  .btn-editorial-outline {
+    @apply btn-gta-outline;
+  }
+
+  /* GTA V HUD Cards */
+  .card-gta {
+    @apply bg-gta-panel;
+    @apply border-l-4 border-accent-blue;
+    @apply transition-all duration-200 ease-out;
+    @apply hover:bg-gta-panel-light hover:shadow-gta-hover;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card-gta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(94, 156, 211, 0.1));
+    transition: width 0.3s ease;
+  }
+
+  .card-gta:hover::before {
+    width: 100%;
+  }
+
+  .card-gta .image-wrapper {
+    @apply relative overflow-hidden;
+    aspect-ratio: 16 / 9;
+  }
+
+  .card-gta img {
+    @apply w-full h-full object-cover;
+    @apply transition-transform duration-300 ease-out;
+  }
+
+  .card-gta:hover img {
+    transform: scale(1.05);
+  }
+
+  /* Legacy compatibility */
+  .card-editorial {
+    @apply card-gta;
+  }
+
+  .card-agency {
+    @apply card-gta;
+  }
+
+  /* Loading Bar - GTA V Style */
+  .loading-bar {
+    @apply h-1 bg-gta-panel overflow-hidden;
+    position: relative;
+  }
+
+  .loading-bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    @apply bg-accent-blue;
+    animation: loadingBar 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    box-shadow: 0 0 10px rgba(94, 156, 211, 0.5);
+  }
+
+  @keyframes loadingBar {
+    0% { width: 0%; left: 0; }
+    50% { width: 100%; left: 0; }
+    100% { width: 0%; left: 100%; }
+  }
+
+  /* Editorial Overlay */
+  .overlay-editorial {
+    @apply absolute inset-0 bg-gradient-to-t from-editorial-charcoal via-transparent to-editorial-charcoal/50;
+    pointer-events: none;
+  }
+
+  /* Image zoom effect */
+  .image-zoom-container {
+    @apply relative overflow-hidden;
+  }
+
+  .image-zoom-container img {
+    @apply w-full h-full object-cover;
+    @apply transition-transform duration-700 ease-out;
+  }
+
+  .image-zoom-container:hover img {
+    transform: scale(1.05);
+  }
+
+  /* Status Badge - Editorial */
+  .badge-editorial {
+    @apply inline-flex items-center gap-2 px-4 py-2;
+    @apply font-mono text-xs uppercase tracking-wider;
+    @apply bg-editorial-paper;
+    @apply border border-editorial-pearl;
+  }
+
+  .badge-editorial.online {
+    @apply border-accent-green/30;
+  }
+
+  .badge-editorial.online::before {
+    content: '';
+    @apply w-2 h-2 rounded-full bg-accent-green;
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .badge-status {
+    @apply badge-editorial;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+
+  /* Divider Line - Editorial */
+  .divider-editorial {
+    @apply relative h-[2px] bg-gradient-to-r from-transparent via-accent-terracotta/30 to-transparent;
+    @apply my-16;
+  }
+
+  .divider-gold {
+    @apply divider-editorial;
+  }
+
+  /* Section Padding */
+  .section-padding {
+    @apply py-20 md:py-28 lg:py-36;
+  }
+
+  /* Text Shadow for readability */
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(26, 26, 26, 0.3);
+  }
+
+  .text-shadow-lg {
+    text-shadow: 0 4px 8px rgba(26, 26, 26, 0.5);
+  }
+
+  /* Smooth transitions */
+  .transition-smooth {
+    @apply transition-all duration-300 cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Loading Screen - Editorial */
+  .loading-screen-editorial {
+    @apply fixed inset-0 bg-editorial-cream z-50 flex items-center justify-center;
+  }
+
+  .loading-screen-cinema {
+    @apply loading-screen-editorial;
+  }
+
+  /* Grid Layouts */
+  .grid-editorial {
+    @apply grid gap-8 md:gap-12 lg:gap-16;
+    @apply grid-cols-1 md:grid-cols-2 lg:grid-cols-3;
+  }
+
+  .grid-asymmetric {
+    @apply grid gap-8;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  /* Netflix-style carousel track */
+  .carousel-track {
+    @apply flex gap-4 overflow-x-auto snap-x snap-mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .carousel-track::-webkit-scrollbar {
+    display: none;
+  }
+
+  .carousel-item {
+    @apply flex-shrink-0 snap-start;
+  }
+
+  /* Mobile optimizations */
+  @media (max-width: 768px) {
+    .section-padding {
+      @apply py-16;
+    }
+
+    h1 {
+      @apply text-4xl md:text-5xl;
+    }
+
+    h2 {
+      @apply text-3xl md:text-4xl;
+    }
+
+    h3 {
+      @apply text-2xl md:text-3xl;
+    }
+
+    .btn-cinema,
+    .btn-cinema-gold {
+      @apply px-6 py-3 text-sm;
+    }
+  }
+}
+
+@layer utilities {
+  /* Aspect Ratios for cinematic feel */
+  .aspect-cinema {
+    aspect-ratio: 21 / 9;
+  }
+
+  .aspect-poster {
+    aspect-ratio: 2 / 3;
+  }
+
+  .aspect-card {
+    aspect-ratio: 16 / 9;
+  }
+
+  /* Blur utilities */
+  .blur-cinema {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+
+  /* Gold accent utilities */
+  .text-gold-gradient {
+    @apply bg-gradient-to-r from-accent-gold via-accent-gold-light to-accent-gold bg-clip-text text-transparent;
+  }
+
+  /* Animation delays */
+  .animation-delay-100 {
+    animation-delay: 100ms;
+  }
+
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .animation-delay-300 {
+    animation-delay: 300ms;
+  }
+
+  .animation-delay-500 {
+    animation-delay: 500ms;
+  }
+
+  /* Smooth scroll behavior */
+  .scroll-smooth {
+    scroll-behavior: smooth;
+  }
+
+  /* Hide scrollbar but keep functionality */
+  .no-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Pointer events */
+  .pointer-events-all {
+    pointer-events: all;
+  }
+
+  /* Z-index utilities */
+  .z-cinema {
+    z-index: 100;
+  }
+
+  .z-overlay {
+    z-index: 50;
+  }
+}

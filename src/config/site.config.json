@@ -1,0 +1,694 @@
+{
+  "seo": {
+    "title": "NightCity Roleplay - Premium GTA V FiveM RP Server",
+    "shortTitle": "NightCity RP",
+    "description": "Join the most immersive GTA V FiveM roleplay server. Custom framework, active community, realistic economy, and endless roleplay possibilities. Apply for whitelist today!",
+    "keywords": [
+      "FiveM", 
+      "GTA V", 
+      "Roleplay", 
+      "RP Server", 
+      "GTA Roleplay", 
+      "FiveM Server", 
+      "Gaming Community",
+      "Los Santos",
+      "Whitelist Server"
+    ],
+    "ogImage": "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1200&h=630&fit=crop",
+    "twitterCard": "summary_large_image",
+    "twitterHandle": "@nightcityrp",
+    "favicon": "/favicon.ico",
+    "themeColor": "#4A7C4E",
+    "locale": "en_US",
+    "url": "https://nightcity-rp.com"
+  },
+  "legal": {
+    "companyName": "NightCity Roleplay",
+    "email": "contact@nightcity-rp.com",
+    "privacyEmail": "privacy@nightcity-rp.com",
+    "dpoEmail": "dpo@nightcity-rp.com",
+    "supportEmail": "support@nightcity-rp.com",
+    "lastUpdated": "2025-01-01",
+    "minAge": 18,
+    "copyrightYear": 2025,
+    "dataRetention": {
+      "characterData": "6 months of inactivity",
+      "chatLogs": "30 days",
+      "connectionLogs": "90 days",
+      "banRecords": "Permanently",
+      "whitelistApplications": "1 year"
+    }
+  },
+  "server": {
+    "name": "NightCity Roleplay",
+    "shortName": "NCRP",
+    "tagline": "Where Legends Are Written",
+    "slogan": "Every Story. Every Choice. Every Moment.",
+    "description": "Experience cinematic storytelling in Los Santos. Shape your narrative, build your empire, and become a legend in the most immersive roleplay environment.",
+    "ip": "play.nightcity-rp.com",
+    "port": "30120",
+    "discord": "https://discord.gg/fourtwenty",
+    "maxPlayers": 256,
+    "location": "Los Santos",
+    "language": "English",
+    "logo": {
+      "type": "text",
+      "content": "NC"
+    },
+    "stats": {
+      "established": "2024",
+      "totalPlayers": "15,000+",
+      "activeGangs": "12",
+      "businesses": "45+"
+    },
+    "loadingTips": [
+      "Every character has a story. What's yours?",
+      "In this city, reputation is everything",
+      "Choose your allies carefully",
+      "Your decisions shape the narrative",
+      "Quality roleplay creates legendary moments",
+      "Build your legacy, one choice at a time",
+      "Welcome to your cinematic experience"
+    ]
+  },
+  "images": {
+    "hero": {
+      "loadingBackground": "https://www.rockstargames.com/VI/_next/image?url=%2FVI%2F_next%2Fstatic%2Fmedia%2FCal_Hampton_landscape.b1bc01a4.jpg&w=3840&q=75",
+      "mainBackground": "https://gaming-cdn.com/images/products/186/screenshot/grand-theft-auto-v-pc-spiel-rockstar-wallpaper-4.jpg?v=1744367958"
+    },
+    "defaults": {
+      "teamAvatar": "https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=400&h=400&fit=crop",
+      "galleryThumbnail": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=600&h=400&fit=crop"
+    }
+  },
+  "ui": {
+    "features": {
+      "sectionTag": "Experience",
+      "title": "Server",
+      "titleAccent": "Features",
+      "highlight": "256 PLAYERS • CUSTOM FRAMEWORK • CINEMATIC ROLEPLAY"
+    },
+    "jobs": {
+      "sectionTag": "Careers",
+      "title": "Build Your",
+      "titleAccent": "Legacy",
+      "subtitle": "Shape your destiny in Los Santos. Every career path tells a different story.",
+      "categoriesTitle": "Categories",
+      "allJobsLabel": "All Jobs",
+      "totalJobsLabel": "Total Jobs",
+      "salaryRangeLabel": "Salary Range",
+      "applyButtonText": "APPLY NOW",
+      "salaryPrefix": "Starting",
+      "salarySymbols": {
+        "low": "$",
+        "medium": "$$",
+        "high": "$$$",
+        "veryHigh": "$$$$"
+      },
+      "salaryThresholds": {
+        "medium": 200,
+        "high": 350,
+        "veryHigh": 450
+      }
+    },
+    "rules": {
+      "sectionTag": "Guidelines",
+      "title": "Server",
+      "titleAccent": "Guidelines",
+      "subtitle": "Professional standards for an immersive experience. Excellence is our baseline.",
+      "footer": "Excellence in Every Interaction",
+      "severityLabels": {
+        "high": "high priority",
+        "medium": "medium priority",
+        "low": "low priority"
+      }
+    },
+    "team": {
+      "sectionTag": "Leadership",
+      "title": "Meet The",
+      "titleAccent": "Team",
+      "subtitle": "The visionaries behind your cinematic experience. Dedicated to excellence.",
+      "joinTitle": "Join Our Team",
+      "joinSubtitle": "Ready to help shape the narrative?",
+      "joinButton": "APPLY ON DISCORD"
+    },
+    "gallery": {
+      "sectionTag": "Showcase",
+      "title": "Media",
+      "titleAccent": "Gallery",
+      "subtitle": "Captured moments from our cinematic universe.",
+      "evidencePrefix": "File #",
+      "featuredBadge": "Featured"
+    },
+    "footer": {
+      "establishedPrefix": "EST.",
+      "sections": {
+        "navigation": "Navigation",
+        "serverStats": "Server Stats",
+        "connect": "Connect"
+      },
+      "statsLabels": {
+        "players": "Players",
+        "activeGangs": "Active Gangs",
+        "businesses": "Businesses"
+      },
+      "serverConnection": "Server Connection",
+      "onlineStatus": "Online",
+      "disclaimer": "Not affiliated with Rockstar Games or Take-Two Interactive."
+    },
+    "navigation": {
+      "menuItems": ["Features", "Jobs", "Rules", "Team", "Gallery"],
+      "connectButton": "CONNECT",
+      "discordButton": "DISCORD",
+      "serverCopyMessage": "Server IP copied:",
+      "onlineText": "Online",
+      "offlineText": "Offline"
+    },
+    "common": {
+      "playNow": "PLAY NOW",
+      "discord": "DISCORD",
+      "loading": "Loading...",
+      "privacy": "Privacy",
+      "terms": "Terms",
+      "cookies": "Cookies"
+    }
+  },
+  "features": [
+    {
+      "id": "custom-framework",
+      "title": "Custom Framework",
+      "description": "Proprietary technology designed for seamless, cinematic gameplay experiences",
+      "icon": "Code2",
+      "highlight": true
+    },
+    {
+      "id": "gang-system",
+      "title": "Territory Management",
+      "description": "Strategic control zones with dynamic influence and progression systems",
+      "icon": "Users",
+      "highlight": true
+    },
+    {
+      "id": "economy",
+      "title": "Dynamic Economy",
+      "description": "Complex economic ecosystem with multiple revenue streams and market dynamics",
+      "icon": "DollarSign",
+      "highlight": false
+    },
+    {
+      "id": "housing",
+      "title": "Real Estate Portfolio",
+      "description": "Acquire properties ranging from starter apartments to luxury penthouses",
+      "icon": "Home",
+      "highlight": false
+    },
+    {
+      "id": "vehicles",
+      "title": "300+ Vehicles",
+      "description": "Extensive collection from classic cars to cutting-edge supercars",
+      "icon": "Car",
+      "highlight": false
+    },
+    {
+      "id": "heists",
+      "title": "Heist Operations",
+      "description": "Orchestrate complex operations requiring strategy, timing, and teamwork",
+      "icon": "Lock",
+      "highlight": true
+    }
+  ],
+  "gallery": {
+    "images": [
+      { 
+        "id": 1, 
+        "src": "https://images.unsplash.com/photo-1486428128344-5413e434ad35?w=800&h=600&fit=crop", 
+        "alt": "City skyline at night", 
+        "title": "Downtown Los Santos",
+        "category": "locations",
+        "featured": true
+      },
+      { 
+        "id": 2, 
+        "src": "https://images.unsplash.com/photo-1593280405106-e438ebe93f5b?w=800&h=600&fit=crop", 
+        "alt": "Police chase scene", 
+        "title": "High Speed Chase",
+        "category": "action",
+        "featured": true
+      },
+      { 
+        "id": 3, 
+        "src": "https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?w=800&h=600&fit=crop", 
+        "alt": "Car meet event", 
+        "title": "Weekly Car Meet",
+        "category": "events",
+        "featured": false
+      },
+      { 
+        "id": 4, 
+        "src": "https://images.unsplash.com/photo-1547447134-cd3f5c716030?w=800&h=600&fit=crop", 
+        "alt": "Racing event", 
+        "title": "Street Racing",
+        "category": "events",
+        "featured": true
+      },
+      { 
+        "id": 5, 
+        "src": "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&h=600&fit=crop", 
+        "alt": "Roleplay scenario", 
+        "title": "Bank Heist RP",
+        "category": "roleplay",
+        "featured": true
+      },
+      { 
+        "id": 6, 
+        "src": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&h=600&fit=crop", 
+        "alt": "Community gathering", 
+        "title": "Community Event",
+        "category": "events",
+        "featured": false
+      },
+      { 
+        "id": 7, 
+        "src": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop", 
+        "alt": "Custom vehicles", 
+        "title": "Custom Rides",
+        "category": "vehicles",
+        "featured": true
+      },
+      { 
+        "id": 8, 
+        "src": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=600&fit=crop", 
+        "alt": "Server event", 
+        "title": "Special Event",
+        "category": "events",
+        "featured": false
+      }
+    ],
+    "categories": [
+      { "id": "all", "name": "All" },
+      { "id": "locations", "name": "Locations" },
+      { "id": "action", "name": "Action" },
+      { "id": "events", "name": "Events" },
+      { "id": "roleplay", "name": "Roleplay" },
+      { "id": "vehicles", "name": "Vehicles" }
+    ]
+  },
+  "jobs": {
+    "categories": [
+      {
+        "id": "emergency",
+        "name": "Emergency Services",
+        "color": "green",
+        "legal": true
+      },
+      {
+        "id": "civilian",
+        "name": "Civilian",
+        "color": "blue",
+        "legal": true
+      },
+      {
+        "id": "criminal",
+        "name": "Criminal",
+        "color": "red",
+        "legal": false
+      },
+      {
+        "id": "business",
+        "name": "Business",
+        "color": "gold",
+        "legal": true
+      },
+      {
+        "id": "government",
+        "name": "Government",
+        "color": "blue",
+        "legal": true
+      },
+      {
+        "id": "medical",
+        "name": "Medical",
+        "color": "green",
+        "legal": true
+      },
+      {
+        "id": "mechanic",
+        "name": "Mechanic",
+        "color": "orange",
+        "legal": true
+      }
+    ],
+    "list": [
+      {
+        "id": "police",
+        "name": "Police Officer",
+        "category": "emergency",
+        "description": "Uphold justice and maintain order throughout Los Santos",
+        "requirements": ["18+ years old", "Clean record", "Interview required"],
+        "salary": 300,
+        "image": "https://images.unsplash.com/photo-1596265371388-43edbaadab94?w=600&h=400&fit=crop"
+      },
+      {
+        "id": "ems",
+        "name": "Paramedic",
+        "category": "emergency",
+        "description": "Emergency medical response and critical care services",
+        "requirements": ["16+ years old", "Medical training", "Active player"],
+        "salary": 250,
+        "image": "https://images.unsplash.com/photo-1516549655169-df83a0774514?w=600&h=400&fit=crop"
+      },
+      {
+        "id": "mechanic",
+        "name": "Mechanic",
+        "category": "mechanic",
+        "description": "Automotive specialist providing repair and customization services",
+        "requirements": ["No requirements", "Training provided"],
+        "salary": 150,
+        "image": "https://images.unsplash.com/photo-1615906655593-ad0386982a0f?w=600&h=400&fit=crop"
+      },
+      {
+        "id": "taxi",
+        "name": "Taxi Driver",
+        "category": "civilian",
+        "description": "Professional transportation services throughout Los Santos",
+        "requirements": ["Valid license", "Clean driving record"],
+        "salary": 100,
+        "image": "https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=600&h=400&fit=crop"
+      },
+      {
+        "id": "dealer",
+        "name": "Drug Dealer",
+        "category": "criminal",
+        "description": "Manage distribution networks and territory operations",
+        "requirements": ["Street reputation", "Gang affiliation"],
+        "salary": 500,
+        "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600&h=400&fit=crop"
+      },
+      {
+        "id": "gunrunner",
+        "name": "Arms Dealer",
+        "category": "criminal",
+        "description": "Specialized equipment broker and logistics coordinator",
+        "requirements": ["Connections", "Trust level"],
+        "salary": 500,
+        "image": "https://images.unsplash.com/photo-1595590424283-b8f17842773f?w=600&h=400&fit=crop"
+      },
+      {
+        "id": "lawyer",
+        "name": "Lawyer",
+        "category": "business",
+        "description": "Legal representation and courtroom advocacy services",
+        "requirements": ["Bar exam", "Good standing"],
+        "salary": 350,
+        "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=600&h=400&fit=crop"
+      },
+      {
+        "id": "judge",
+        "name": "Judge",
+        "category": "government",
+        "description": "Preside over legal proceedings and ensure justice",
+        "requirements": ["Legal experience", "Application required"],
+        "salary": 500,
+        "image": "https://images.unsplash.com/photo-1436450412740-6b988f486c6b?w=600&h=400&fit=crop"
+      },
+      {
+        "id": "doctor",
+        "name": "Doctor",
+        "category": "medical",
+        "description": "Lead medical professional providing specialized healthcare",
+        "requirements": ["Medical license", "Experience required"],
+        "salary": 400,
+        "image": "https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=600&h=400&fit=crop"
+      },
+      {
+        "id": "nurse",
+        "name": "Nurse",
+        "category": "medical",
+        "description": "Healthcare professional supporting medical operations",
+        "requirements": ["16+ years old", "Training provided"],
+        "salary": 200,
+        "image": "https://images.unsplash.com/photo-1621604603003-c324e1fb667d?w=600&h=400&fit=crop"
+      },
+      {
+        "id": "auto_mechanic",
+        "name": "Auto Mechanic",
+        "category": "mechanic",
+        "description": "Technical specialist in vehicle maintenance and modifications",
+        "requirements": ["Basic knowledge", "Tools provided"],
+        "salary": 180,
+        "image": "https://images.unsplash.com/photo-1625047509168-a7026f36de04?w=600&h=400&fit=crop"
+      }
+    ]
+  },
+  "rules": [
+    {
+      "id": "rdm",
+      "title": "No Random Deathmatch (RDM)",
+      "description": "All actions require proper roleplay justification and context",
+      "category": "combat",
+      "severity": "high"
+    },
+    {
+      "id": "vdm",
+      "title": "No Vehicle Deathmatch (VDM)",
+      "description": "Vehicles are for transportation only, not as weapons",
+      "category": "combat",
+      "severity": "high"
+    },
+    {
+      "id": "metagaming",
+      "title": "No Metagaming",
+      "description": "Maintain strict separation between in-character and out-of-character knowledge",
+      "category": "roleplay",
+      "severity": "high"
+    },
+    {
+      "id": "powergaming",
+      "title": "No Powergaming",
+      "description": "Allow reasonable response time and maintain realistic limitations",
+      "category": "roleplay",
+      "severity": "medium"
+    },
+    {
+      "id": "nlr",
+      "title": "New Life Rule",
+      "description": "Character memory reset applies to events preceding death",
+      "category": "roleplay",
+      "severity": "medium"
+    },
+    {
+      "id": "respect",
+      "title": "Respect Everyone",
+      "description": "Maintain professional conduct and respect for all players",
+      "category": "general",
+      "severity": "high"
+    },
+    {
+      "id": "greenzone",
+      "title": "Green Zones",
+      "description": "Designated safe zones where hostile actions are prohibited",
+      "category": "zones",
+      "severity": "medium"
+    },
+    {
+      "id": "corruption",
+      "title": "Cop Corruption",
+      "description": "Law enforcement corruption requires administrative authorization",
+      "category": "special",
+      "severity": "low"
+    },
+    {
+      "id": "failrp",
+      "title": "No FailRP",
+      "description": "Maintain character consistency and value for life at all times",
+      "category": "roleplay",
+      "severity": "high"
+    },
+    {
+      "id": "combat-logging",
+      "title": "No Combat Logging",
+      "description": "Remain connected during active scenarios and confrontations",
+      "category": "combat",
+      "severity": "high"
+    },
+    {
+      "id": "robbery",
+      "title": "Robbery Rules",
+      "description": "Minimum law enforcement presence required for major crimes",
+      "category": "special",
+      "severity": "medium"
+    },
+    {
+      "id": "initiation",
+      "title": "Proper Initiation",
+      "description": "Proper roleplay initiation required before any hostile engagement",
+      "category": "combat",
+      "severity": "high"
+    },
+    {
+      "id": "value-life",
+      "title": "Value Your Life",
+      "description": "Respond appropriately to threatening situations and superior force",
+      "category": "roleplay",
+      "severity": "high"
+    },
+    {
+      "id": "mic-required",
+      "title": "Microphone Required",
+      "description": "Voice communication required for all roleplay interactions",
+      "category": "general",
+      "severity": "high"
+    },
+    {
+      "id": "exploits",
+      "title": "No Exploiting",
+      "description": "Exploitation of bugs results in immediate permanent removal",
+      "category": "general",
+      "severity": "high"
+    },
+    {
+      "id": "safezones",
+      "title": "Safe Zone Rules",
+      "description": "Weapons prohibited in designated government facilities",
+      "category": "zones",
+      "severity": "medium"
+    },
+    {
+      "id": "hostage",
+      "title": "Hostage Rules",
+      "description": "Hostage scenarios require genuine player participation",
+      "category": "special",
+      "severity": "medium"
+    },
+    {
+      "id": "ems-respect",
+      "title": "Respect EMS",
+      "description": "Allow emergency services to operate without interference",
+      "category": "combat",
+      "severity": "medium"
+    },
+    {
+      "id": "stream-sniping",
+      "title": "No Stream Sniping",
+      "description": "Prohibited use of live streams for tactical advantages",
+      "category": "general",
+      "severity": "high"
+    },
+    {
+      "id": "erp",
+      "title": "No ERP",
+      "description": "Adult content strictly prohibited in all scenarios",
+      "category": "roleplay",
+      "severity": "high"
+    }
+  ],
+  "team": [
+    {
+      "id": "john-doe",
+      "name": "John 'Boss' Doe",
+      "role": "Server Owner",
+      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
+      "discord": "bigboss",
+      "description": "Founder and visionary leader of NightCity Roleplay",
+      "badge": "FOUNDER",
+      "status": "active"
+    },
+    {
+      "id": "jane-smith",
+      "name": "Jane 'Control' Smith",
+      "role": "Head Administrator",
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
+      "discord": "control",
+      "description": "Ensuring server integrity and exceptional player experiences",
+      "badge": "ADMIN",
+      "status": "active"
+    },
+    {
+      "id": "mike-wilson",
+      "name": "Mike 'Tech' Wilson",
+      "role": "Lead Developer",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+      "discord": "techguy",
+      "description": "Lead technical architect creating innovative gameplay systems",
+      "badge": "DEV",
+      "status": "active"
+    },
+    {
+      "id": "sarah-jones",
+      "name": "Sarah 'Peace' Jones",
+      "role": "Senior Moderator",
+      "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
+      "discord": "peacekeeper",
+      "description": "Community liaison and conflict resolution specialist",
+      "badge": "MOD",
+      "status": "active"
+    }
+  ],
+  "api": {
+    "serverCode": "ymkax5",
+    "cfxApiUrl": "https://servers-frontend.fivem.net/api/servers/single/",
+    "refreshInterval": 30000
+  },
+  "social": {
+    "discord": "https://discord.gg/fourtwenty",
+    "twitter": "https://twitter.com/nightcityrp",
+    "youtube": "https://youtube.com/@nightcityrp",
+    "tiktok": "https://tiktok.com/@nightcityrp",
+    "instagram": "https://instagram.com/nightcityrp",
+    "twitch": "https://twitch.tv/nightcityrp",
+    "teamspeak": null,
+    "forum": null
+  },
+  "whitelist": {
+    "enabled": true,
+    "applicationUrl": "https://apply.nightcity-rp.com",
+    "requirements": [
+      "Minimum age of 16 years",
+      "Working microphone",
+      "Read and understand server rules",
+      "Pass character backstory review"
+    ],
+    "process": [
+      "Fill out application form",
+      "Wait for review (24-48 hours)",
+      "Interview on Discord",
+      "Welcome to the streets"
+    ]
+  },
+  "donations": {
+    "enabled": true,
+    "currency": "USD",
+    "paypalUrl": "https://paypal.me/nightcityrp",
+    "packages": [
+      {
+        "id": "supporter",
+        "name": "Street Supporter",
+        "price": 5,
+        "perks": ["Priority Queue", "Supporter Tag", "Extra Outfit Slot"],
+        "popular": false
+      },
+      {
+        "id": "vip",
+        "name": "VIP Status",
+        "price": 15,
+        "perks": ["Priority Queue", "VIP Tag", "Extra Character Slot", "Custom Plate", "VIP Lounge Access"],
+        "popular": true
+      },
+      {
+        "id": "elite",
+        "name": "Elite Gang",
+        "price": 30,
+        "perks": ["Priority Queue", "Elite Tag", "2 Extra Character Slots", "Custom Plate", "Exclusive Vehicles", "Custom Gang Tag"],
+        "popular": false
+      }
+    ]
+  },
+  "footer": {
+    "showNewsletter": false,
+    "showSocialLinks": true,
+    "showLegalLinks": true,
+    "showServerStats": true,
+    "copyright": "© 2025 NightCity Roleplay. All rights reserved.",
+    "disclaimer": "Not affiliated with Rockstar Games or Take-Two Interactive."
+  }
+}
